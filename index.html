@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Brands and creators, in one shared space: offers, approvals, deliverables and payments, start to finish." />
+  <title>guapd — Where creators and brands build together.</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="/assets/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap" />
+  <link rel="stylesheet" href="/src/styles.css" />
+  <script defer src="/vendor/gsap.min.js"></script>
+  <script defer src="/vendor/ScrollTrigger.min.js"></script>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+    <a class="logo" href="/" aria-label="guapd home">guapd</a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <button class="nav-link" data-dialog="creators">For Creators <svg viewBox="0 0 30 30" aria-hidden="true"><path d="m4.8 7 10.2 10.4L25.2 7 28 9.8 15 23 2 9.8Z" /></svg></button>
+      <button class="nav-link" data-dialog="brands">For Brands <svg viewBox="0 0 30 30" aria-hidden="true"><path d="m4.8 7 10.2 10.4L25.2 7 28 9.8 15 23 2 9.8Z" /></svg></button>
+      <button class="nav-link" data-dialog="demo">Request a demo</button>
+    </nav>
+    <div class="header-actions"><button class="nav-link login" data-dialog="login">Log in</button><button class="button small" data-dialog="access">Get Access</button></div>
+    <div class="menu-backdrop" aria-hidden="true"></div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" inert>
+      <button data-dialog="creators">For Creators</button><button data-dialog="brands">For Brands</button><button data-dialog="demo">Request a demo</button><button data-dialog="login">Log in</button>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading"><span class="first-line">Where creators and brands</span><span class="second-line"><span class="rotating-word" aria-hidden="true"><span data-active="true">Build</span><span data-active="false">Scale</span><span data-active="false">Partner</span></span><span class="sr-only">Build, scale, and partner</span><span>together.</span></span></h1>
+        <p>Brands and creators, in one shared space: offers, approvals, deliverables and payments, start to finish.</p>
+        <div class="hero-actions"><button class="button" data-dialog="access">Get Access</button><button class="button secondary" data-dialog="demo">Request a demo</button></div>
+      </div>
+    </section>
+    <section class="problem" id="collaboration" aria-labelledby="problem-heading">
+      <div class="problem-viewport">
+        <canvas class="network" aria-hidden="true"></canvas>
+        <h2 id="problem-heading" class="statement"><span class="sr-only">Behind every great brand collaboration is an impossible amount of back-and-forth.</span><span class="word-reveal" aria-hidden="true">Behind every great brand collaboration is an impossible amount of back-and-forth.</span></h2>
+      </div>
+    </section>
+    <section class="together" id="together" aria-labelledby="together-heading">
+      <div class="together-content"><h2 id="together-heading">guapd brings it all together.</h2><p>One shared space for brands and creators to agree on offers, review deliverables, and manage payments.</p></div>
+    </section>
+  </main>
+  <dialog class="info-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-copy">
+    <button class="dialog-close" aria-label="Close dialog">×</button><h2 id="dialog-title"></h2><p id="dialog-copy"></p><button class="button dialog-done">Got it</button>
+  </dialog>
+</body>
+</html>
