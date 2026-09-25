@@ -1,0 +1,103 @@
+{
+  "file": {
+    "id": "01M37WH6E5TYN1H9TNAF52AWFD",
+    "name": "Jubilant hill"
+  },
+  "contentHash": {
+    "tokens": "811c9dc5"
+  }
+}
+(
+    <div style={{ backgroundColor: '#FFFFFF', boxSizing: 'border-box', fontSynthesis: 'none', MozOsxFontSmoothing: 'grayscale', overflow: 'clip', overflowWrap: 'anywhere', position: 'relative', WebkitFontSmoothing: 'antialiased' }}>
+      <div style={{ backgroundColor: '#FFFFFF', boxSizing: 'border-box', height: '309px', left: 'calc(50% - 7.563px)', position: 'absolute', top: 162.75, translate: '-50%', width: '1252px' }}>
+        <div style={{ boxSizing: 'border-box', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '12px' }}>
+          <div style={{ boxSizing: 'border-box', color: '#000000F2', display: 'flex', flexWrap: 'wrap', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '96px', fontWeight: 600, justifyContent: 'center', letterSpacing: '-4.6px', lineHeight: '100px', textAlign: 'center', textWrap: 'balance' }}>
+            Where creators and brands 
+          </div>
+          <div style={{ boxSizing: 'border-box', color: '#000000F2', display: 'flex', flexWrap: 'wrap', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '96px', fontWeight: 600, justifyContent: 'center', letterSpacing: '-4.6px', lineHeight: '100px', textAlign: 'center', textWrap: 'balance' }}>
+            Build together.
+          </div>
+        </div>
+        <div style={{ boxSizing: 'border-box', color: '#000000E5', display: 'flex', flexWrap: 'wrap', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '20px', justifyContent: 'center', letterSpacing: '-0.125px', lineHeight: '28px', marginBottom: '20px', textAlign: 'center', textWrap: 'balance' }}>
+          Brands and creators, in one shared space: offers, approvals, deliverables and payments, start to finish.
+        </div>
+        <div style={{ boxSizing: 'border-box', display: 'grid', gap: '16px', gridTemplateColumns: '1fr 1fr', justifyContent: 'center', marginLeft: 'auto', marginRight: 'auto', maxWidth: '100%', width: 'max-content' }}>
+          <div style={{ alignItems: 'center', backgroundColor: '#0075DE', borderColor: '#FFFFFF00', borderRadius: '8px', borderStyle: 'solid', borderWidth: '1px', boxSizing: 'border-box', display: 'flex', gap: '12px', justifyContent: 'center', maxWidth: '280px', paddingBlock: '6px', paddingInline: '15px' }}>
+            <div style={{ boxSizing: 'border-box', color: '#FFFFFF', display: 'flex', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '16px', fontWeight: 500, lineHeight: '24px', textAlign: 'center' }}>
+              Get Access
+            </div>
+          </div>
+          <div style={{ alignItems: 'center', backgroundColor: '#E6F3FE', borderColor: '#FFFFFF00', borderRadius: '8px', borderStyle: 'solid', borderWidth: '1px', boxSizing: 'border-box', display: 'flex', gap: '12px', justifyContent: 'center', maxWidth: '280px', paddingBlock: '6px', paddingInline: '15px' }}>
+            <div style={{ boxSizing: 'border-box', color: '#005BAB', display: 'flex', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '16px', fontWeight: 500, lineHeight: '24px', overflowWrap: 'normal', textAlign: 'center' }}>
+              Request a demo
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style={{ alignItems: 'center', backgroundColor: '#FFFFFF', boxSizing: 'border-box', display: 'grid', gap: '16px', gridTemplateColumns: '1fr auto 1fr', height: '70px', justifyContent: 'space-between', left: 0.437, overflow: 'clip', paddingBlock: '14px', paddingInline: '24px', position: 'absolute', top: -0.25, width: '1512px' }}>
+        <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '4px', gridColumnStart: '2', justifyContent: 'center' }}>
+          <div style={{ boxSizing: 'border-box' }}>
+            <div style={{ alignContent: 'center', alignItems: 'center', borderRadius: '4px', boxSizing: 'border-box', display: 'flex', gap: '8px', justifyContent: 'center', justifyItems: 'center', paddingBlock: '5px', paddingInline: '10px' }}>
+              <div style={{ boxSizing: 'border-box', color: '#000000E5', display: 'flex', flexWrap: 'wrap', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', fontWeight: 500, justifyContent: 'center', lineHeight: '20px', textAlign: 'center', width: 'max-content' }}>
+                For Creators
+              </div>
+              <div style={{ boxSizing: 'border-box', fill: 'rgba(0, 0, 0, 0.898)', flexShrink: '0', height: '10.4px', width: '10.4px' }}>
+                <svg viewBox="0 0 30 30" fontSize="16px" width="30" height="30" xmlns="http://www.w3.org/2000/svg" style={{ height: '100%', fill: 'rgba(0, 0, 0, 0.898)', width: '100%', overflow: 'clip' }}>
+                  <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7" fontSize="16px" fill="rgb(0 0 0 / 89.8%)" style={{ boxSizing: 'border-box', transformOrigin: '0px 0px' }} />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div style={{ boxSizing: 'border-box' }}>
+            <div style={{ alignContent: 'center', alignItems: 'center', borderRadius: '4px', boxSizing: 'border-box', display: 'flex', gap: '8px', justifyContent: 'center', justifyItems: 'center', paddingBlock: '5px', paddingInline: '10px' }}>
+              <div style={{ boxSizing: 'border-box', color: '#000000E5', display: 'flex', flexWrap: 'wrap', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', fontWeight: 500, justifyContent: 'center', lineHeight: '20px', textAlign: 'center', width: 'max-content' }}>
+                For Brands
+              </div>
+              <div style={{ boxSizing: 'border-box', fill: 'rgba(0, 0, 0, 0.898)', flexShrink: '0', height: '10.4px', width: '10.4px' }}>
+                <svg viewBox="0 0 30 30" fontSize="16px" width="30" height="30" xmlns="http://www.w3.org/2000/svg" style={{ height: '100%', fill: 'rgba(0, 0, 0, 0.898)', width: '100%', overflow: 'clip' }}>
+                  <polygon points="15,17.4 4.8,7 2,9.8 15,23 28,9.8 25.2,7" fontSize="16px" fill="rgb(0 0 0 / 89.8%)" style={{ boxSizing: 'border-box', transformOrigin: '0px 0px' }} />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div style={{ alignContent: 'center', alignItems: 'center', borderRadius: '4px', boxSizing: 'border-box', display: 'flex', flexShrink: '0', gap: '8px', justifyContent: 'center', justifyItems: 'center', paddingBlock: '5px', paddingInline: '10px' }}>
+            <div style={{ boxSizing: 'border-box', color: '#000000E5', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', fontWeight: 500, lineHeight: '20px', width: 'max-content' }}>
+              Guide
+            </div>
+          </div>
+          <div style={{ alignContent: 'center', alignItems: 'center', borderRadius: '4px', boxSizing: 'border-box', display: 'flex', flexShrink: '0', gap: '8px', justifyContent: 'center', justifyItems: 'center', paddingBlock: '5px', paddingInline: '10px' }}>
+            <div style={{ boxSizing: 'border-box', color: '#000000E5', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', fontWeight: 500, lineHeight: '20px', overflowWrap: 'normal', width: 'max-content' }}>
+              Request a demo
+            </div>
+          </div>
+        </div>
+        <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '16px', gridColumnStart: '3', justifySelf: 'end' }}>
+          <div style={{ alignItems: 'center', boxSizing: 'border-box', display: 'flex', gap: '12px' }}>
+            <div style={{ alignContent: 'center', alignItems: 'center', borderRadius: '4px', boxSizing: 'border-box', display: 'flex', flexShrink: '0', gap: '8px', justifyContent: 'center', justifyItems: 'center', paddingBlock: '5px', paddingInline: '10px' }}>
+              <div style={{ boxSizing: 'border-box', color: '#000000E5', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', fontWeight: 500, lineHeight: '20px', overflowWrap: 'normal', width: 'max-content' }}>
+                Log in
+              </div>
+            </div>
+          </div>
+          <div style={{ boxSizing: 'border-box', display: 'flex' }}>
+            <div style={{ alignItems: 'center', backgroundColor: '#0075DE', borderColor: '#FFFFFF00', borderRadius: '8px', borderStyle: 'solid', borderWidth: '1px', boxSizing: 'border-box', display: 'flex', justifyContent: 'center', minHeight: '36px', paddingBlock: '4px', paddingInline: '14px' }}>
+              <div style={{ boxSizing: 'border-box', color: '#FFFFFF', display: 'flex', flexWrap: 'wrap', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '14px', fontWeight: 500, justifyContent: 'center', lineHeight: '20px', textAlign: 'center', width: 'max-content' }}>
+                Get Access
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style={{ alignItems: 'start', boxSizing: 'border-box', display: 'flex', flexDirection: 'column', height: '154px', left: '50%', position: 'absolute', top: 668.75, translate: '-50%' }}>
+        <div style={{ boxSizing: 'border-box', color: '#000000F2', display: 'flex', flexShrink: '0', flexWrap: 'wrap', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '48px', fontWeight: 600, height: '154px', justifyContent: 'center', letterSpacing: '-2.1px', lineHeight: '50px', textAlign: 'center', textWrap: 'balance', width: '579px' }}>
+          Behind every great brand collaboration is an impossible amount of back-and-forth.
+        </div>
+      </div>
+      <div style={{ boxSizing: 'border-box', color: '#000000F2', display: 'flex', flexWrap: 'wrap', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '48px', fontWeight: 600, justifyContent: 'center', left: 207, letterSpacing: '-2.1px', lineHeight: '50px', position: 'absolute', textAlign: 'center', top: 1020 }}>
+        guapd brings it all together.
+      </div>
+      <div style={{ boxSizing: 'border-box', color: '#000000F2', display: 'flex', flexWrap: 'wrap', fontFamily: '"Inter", system-ui, sans-serif', fontSize: '20px', justifyContent: 'center', left: 207, letterSpacing: '-0.125px', lineHeight: '28px', position: 'absolute', textAlign: 'center', top: 1086 }}>
+        One shared space for brands and creators to agree on offers, review deliverables, and manage payments.
+      </div>
+    </div>
+  )
