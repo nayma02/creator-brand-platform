@@ -11,8 +11,9 @@
   <link rel="preload" href="/assets/archivo-600-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/src/styles.css" />
   <link rel="stylesheet" href="/src/workflow.css" />
-  <script type="module" src="/src/main.js"></script>
   <link rel="stylesheet" href="/src/ending.css" />
+  <link rel="stylesheet" href="/src/accessibility.css" />
+  <script type="module" src="/src/main.js"></script>
   <script defer src="/src/ending.js"></script>
 </head>
 <body>
@@ -21,17 +22,17 @@
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
     <a class="logo" href="/" aria-label="guapd home">guapd</a>
     <nav class="desktop-nav" aria-label="Main navigation">
-      <button class="nav-link" data-dialog="creators">For Creators <svg viewBox="0 0 30 30" aria-hidden="true"><path d="m4.8 7 10.2 10.4L25.2 7 28 9.8 15 23 2 9.8Z" /></svg></button>
-      <button class="nav-link" data-dialog="brands">For Brands <svg viewBox="0 0 30 30" aria-hidden="true"><path d="m4.8 7 10.2 10.4L25.2 7 28 9.8 15 23 2 9.8Z" /></svg></button>
-      <button class="nav-link" data-dialog="demo">Request a demo</button>
+      <button class="nav-link" aria-disabled="true">For Creators <svg viewBox="0 0 30 30" aria-hidden="true"><path d="m4.8 7 10.2 10.4L25.2 7 28 9.8 15 23 2 9.8Z" /></svg></button>
+      <button class="nav-link" aria-disabled="true">For Brands <svg viewBox="0 0 30 30" aria-hidden="true"><path d="m4.8 7 10.2 10.4L25.2 7 28 9.8 15 23 2 9.8Z" /></svg></button>
+      <button class="nav-link" aria-disabled="true">Request a demo</button>
     </nav>
-    <div class="header-actions"><button class="nav-link login" data-dialog="login">Log in</button><button class="button small" data-dialog="access">Get Access</button></div>
+    <div class="header-actions"><button class="nav-link login" aria-disabled="true">Log in</button><button class="button small" aria-disabled="true">Get Access</button></div>
     <div class="menu-backdrop" aria-hidden="true"></div>
     <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" inert>
-      <button data-dialog="creators">For Creators</button><button data-dialog="brands">For Brands</button><button data-dialog="demo">Request a demo</button><button data-dialog="login">Log in</button>
+      <button aria-disabled="true">For Creators</button><button aria-disabled="true">For Brands</button><button aria-disabled="true">Request a demo</button><button aria-disabled="true">Log in</button>
     </nav>
   </header>
-  <main id="main">
+  <main id="main" tabindex="-1">
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero-content">
         <h1 id="hero-heading"><span class="first-line">Where creators and brands</span><span class="second-line"><span class="rotating-word" aria-hidden="true"><span data-active="true">Build</span><span data-active="false">Scale</span><span data-active="false">Partner</span></span><span class="sr-only">Build, scale, and partner</span><span>together.</span></span></h1>
@@ -126,6 +127,7 @@
     </div><div class="footer-fineprint"><span>© 2026 Guapd. All rights reserved.</span><span class="footer-origin"><span>Made in India</span><i aria-hidden="true">Made with a little more care. ↗</i></span></div>
     <div class="footer-wordmark" role="img" aria-label="guapd"><span aria-hidden="true">g</span><span aria-hidden="true">u</span><span aria-hidden="true">a</span><span aria-hidden="true">p</span><span aria-hidden="true">d</span></div>
   </footer>
+
   <dialog class="info-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-copy">
     <button class="dialog-close" aria-label="Close dialog">×</button><h2 id="dialog-title"></h2><p id="dialog-copy"></p><button class="button dialog-done">Got it</button>
   </dialog>

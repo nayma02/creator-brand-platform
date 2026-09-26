@@ -1,0 +1,38 @@
+/* Accessible contrast, stable interaction geometry and motion controls. */
+:where(a,button,input,[tabindex]):focus-visible{outline:2px solid #245da8;outline-offset:3px}
+[tabindex="-1"]:focus:not(:focus-visible){outline:none}
+.dash-table-scroll{min-height:277px;scroll-margin:24px}
+.dash-table-scroll:focus-visible{outline-offset:-3px}
+.dash-filters button{min-height:30px}
+.dash-search input{min-height:30px;border-color:#7b8492}
+.dash-search input::placeholder{color:#606a79;opacity:1}
+.workflow{--wf-muted:#646c79}
+.workflow-sidebar a{color:#656d79}
+.workflow-sidebar a[aria-current]{color:#252729;font-weight:600}
+.avatar{color:#fff}.avatar.blue{background:#466bac}.avatar.peach{background:#97644e}.avatar.purple{background:#785596}.avatar.green{background:#477662}.avatar.yellow{background:#866b23}.avatar.light{color:#58616f}
+.app-icon{background:#2860c4}.purple-icon{background:#7453bd}.green-icon{background:#19765c}
+html[data-motion=paused] *,html[data-motion=paused] *::before,html[data-motion=paused] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+html[data-motion=paused] .word-reveal>span{filter:none!important;opacity:1!important;color:#0d0d0d!important}
+html[data-motion=paused] .network{display:none}
+.footer-wordmark{cursor:default}
+@media(max-width:767px){.hero-actions{flex-wrap:wrap}.second-line{flex-wrap:wrap;white-space:normal}.problem-viewport{min-height:100svh;height:auto}.statement{overflow-wrap:normal}.creator-rail>a:focus-visible{outline-offset:-2px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.network{display:none}}
+/* Keep text unobscured instead of fading the product panels beneath a pseudo overlay. */
+.product-stage::after{display:none}
+.mock-button:not(.subtle-button){background:#2f67ce;border-color:#2f67ce;color:#fff}
+/* Keyboard focus stays visible: bring a product window above its floating panel only while a keyboard user is inside it. */
+.product-window:has(:focus-visible){z-index:3}
+/* Controls flush with a clipping container draw their focus ring inside, so no side is cut off. */
+.product-stage .window-bottom:focus-visible,.product-stage .upload-bar:focus-visible,.next-card>a:focus-visible{outline-offset:-3px}
+/* The network can drift a node behind the statement; a white halo keeps every letter at full contrast (invisible on the white page). */
+.statement .word-reveal{text-shadow:0 0 1px #fff,0 0 3px #fff,0 0 6px #fff,0 0 12px #fff,0 0 18px #fff}
+/* Links to other websites are disabled: same look, no navigation or hover state. */
+a[aria-disabled="true"]{cursor:default;pointer-events:none}
+/* Header buttons are placeholders for now: same look, no action, no hover change. */
+.site-header button[aria-disabled="true"]{pointer-events:none}
+/* Reveal's starting frame, shown until the motion library loads on first interaction. */
+.motion-pending .word-reveal>span{color:#505050;filter:blur(8px);opacity:.8}
+/* Below-the-fold sections skip layout and paint until they approach the viewport; sizes are remembered once rendered. */
+.workflow{content-visibility:auto;contain-intrinsic-size:auto 3700px}
+.creator-screen{content-visibility:auto;contain-intrinsic-size:auto 1250px}
+.guapd-footer{content-visibility:auto;contain-intrinsic-size:auto 880px}
