@@ -79,4 +79,3 @@ Lighthouse 12 on the production build: **99** performance on mobile and **100** 
 - **Below-the-fold work waits for the visitor.** GSAP, the WebGL network and the interactive product demos load on the first scroll, touch, click or key press. Until then, the problem statement shows its starting reveal frame via the `motion-pending` class.
 - **Offscreen sections skip rendering.** The workflow, dashboard and footer use `content-visibility: auto`, so the browser skips their layout until they approach the screen.
 - **Production server behaves like the host.** `npm run preview` now serves brotli or gzip compression with cacheable headers, matching Vercel.
-- **Known limit.** Best practices is 96 on mobile only because Lighthouse counts the small 9–11px labels inside the product mockups as "illegible font sizes". Fixing that would mean enlarging the mockup text, which changes the design.
