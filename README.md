@@ -49,3 +49,32 @@ The canvas preserves the reference simulation seed, topology, springs, depth blu
 ## Links to finish before launch
 
 Paper did not supply signup, login, or demo-booking URLs. These buttons currently open local informational dialogs and do not collect or transmit data. Replace the handlers in `src/main.js` with the real destinations when available. The Guide link scrolls to the final section.
+
+## Collaboration workflow showcase
+
+The final `#workflow` section contains four scrollable product chapters, with a sticky sidebar and a horizontal navigation bar on mobile. The exact supplied copy is in `index.html`; visual styling is in `src/workflow.css`; sidebar behavior is at the end of `src/main.js`. Product screens are HTML/CSS illustrations using fictional campaign data, so they remain editable without replacing image files. The illustrations are not a connected campaign-management backend.
+
+The final creator dashboard and oversized footer are implemented in `src/ending.css` and `src/ending.js`, with markup in `index.html`. The dashboard uses illustrative data; search and status filters work locally. Footer navigation points to official guapd pages. The Archivo 900 footer font is bundled in `public/assets/archivo-900.ttf`.
+
+## Cookie consent
+
+`src/consent.js` and `src/consent.css` handle cookie consent. No optional cookie or script runs until the visitor opts in.
+
+- **Adding an optional tool:** add it as an inert placeholder, and it is activated only when its category is granted:
+  `<script type="text/plain" data-consent="analytics" data-src="https://example.com/tag.js"></script>`
+  Inline scripts work the same way; put the code inside the tag instead of using `data-src`.
+- **Categories:** edit `CONFIG.categories` in `consent.js`. List the cookie-name patterns each category sets, so they are deleted when consent is withdrawn. Bump `CONFIG.version` whenever categories or purposes change, so visitors are asked again.
+- **Stored choice:** one first-party, strictly necessary cookie, `guapd_consent` (SameSite=Lax, `Secure` on HTTPS), kept for 180 days.
+- **Global Privacy Control:** browsers that send the signal get optional cookies off automatically, with no banner.
+- **API:** `window.guapdConsent.granted('analytics')`, `window.guapdConsent.open()`, and a `guapd:consent` event on `document` whenever the choice changes.
+- **No third-party requests:** Archivo is self-hosted (`public/assets/archivo-600-latin.woff2`) instead of loaded from Google Fonts, so no visitor data goes to another server by default.
+
+## Performance
+
+Lighthouse 12 on the production build: **99** performance on mobile and **100** on desktop, with 100 for accessibility and SEO on both. The design is unchanged; the gains come from delivery.
+
+- **CSS is inlined.** `npm run build` inlines every stylesheet into `dist/index.html`, so there are no render-blocking CSS requests. Keep editing the separate files in `src/`.
+- **Below-the-fold work waits for the visitor.** GSAP, the WebGL network and the interactive product demos load on the first scroll, touch, click or key press. Until then, the problem statement shows its starting reveal frame via the `motion-pending` class.
+- **Offscreen sections skip rendering.** The workflow, dashboard and footer use `content-visibility: auto`, so the browser skips their layout until they approach the screen.
+- **Production server behaves like the host.** `npm run preview` now serves brotli or gzip compression with cacheable headers, matching Vercel.
+- **Known limit.** Best practices is 96 on mobile only because Lighthouse counts the small 9–11px labels inside the product mockups as "illegible font sizes". Fixing that would mean enlarging the mockup text, which changes the design.
