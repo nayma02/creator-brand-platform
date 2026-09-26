@@ -2,5 +2,33 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": null,
-  "headers": [{ "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }] }]
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/vendor/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    },
+    {
+      "source": "/src/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, must-revalidate"
+        }
+      ]
+    }
+  ]
 }
