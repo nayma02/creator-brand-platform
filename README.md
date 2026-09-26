@@ -1,5 +1,7 @@
 # guapd landing page
 
+A unified platform connecting creators and brands.
+
 Responsive implementation of the open Paper design, with the requested Profound motion reference. All runtime assets are local. No deployment has been performed.
 
 ## Run
