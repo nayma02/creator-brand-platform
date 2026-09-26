@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="/src/styles.css" />
   <link rel="stylesheet" href="/src/workflow.css" />
   <script type="module" src="/src/main.js"></script>
+  <link rel="stylesheet" href="/src/ending.css" />
+  <script defer src="/src/ending.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -95,7 +97,35 @@
       </div>
     </section>
 
+    <section class="creator-screen" id="dashboard" aria-labelledby="dashboard-heading">
+      <div class="dashboard-intro"><span class="section-kicker">YOUR SPACE TO CREATE</span><h2 id="dashboard-heading">Everything in one place</h2><p>Less keeping track. More moving forward.</p></div>
+      <div class="creator-app">
+        <aside class="creator-rail"><a class="dashboard-brand" href="#main">guapd<span>.</span></a><span class="rail-label">WORKSPACE</span><a class="rail-active" href="#dashboard">▦ <span>Overview</span></a><a href="#creator-collaborations" aria-label="Collaborations">◇ <span>Collaborations</span></a><a href="#creator-next" aria-label="Deliverables">▧ <span>Deliverables</span></a><a href="#creator-earnings" aria-label="Earnings">↗ <span>Earnings</span></a><div class="rail-bottom"><span class="avatar peach">M</span><div>Maya Chen<small>Creator workspace</small></div></div></aside>
+        <div class="creator-main"><div class="creator-topbar"><span>Workspace <i>/</i> <b>Overview</b></span><span class="preview-label">Creator preview <span class="avatar peach">M</span></span></div>
+          <div class="creator-body"><div class="creator-welcome"><div><h3>A little more room to create.</h3><p>Welcome back, Maya. Here’s where things stand.</p></div><span class="dashboard-date">◷ &nbsp; October 18, 2026</span></div>
+            <div class="creator-stats"><div><span>Active collaborations <i>◇</i></span><strong>3</strong><small>Good things in progress</small></div><div><span>Received this month <i>↗</i></span><strong>₹75,000</strong><small class="stat-green">↗ Three payments received</small></div><div><span>Upcoming payments <i>◷</i></span><strong>₹90,000</strong><small>Across your open collaborations</small></div><div><span>Due this week <i>▧</i></span><strong>2 <em>deliverables</em></strong><small>You’re right on track</small></div></div>
+            <div class="creator-grid"><div class="collaborations-card" id="creator-collaborations"><div class="dash-card-title"><h4>Your collaborations</h4></div><div class="dash-table-tools"><div class="dash-filters" role="group" aria-label="Filter collaborations"><button class="is-selected" data-filter="all" aria-pressed="true">All</button><button data-filter="active" aria-pressed="false">In progress</button><button data-filter="complete" aria-pressed="false">Completed</button></div><label class="dash-search"><span class="sr-only">Search collaborations</span><input type="search" placeholder="Search…" /></label></div>
+              <div class="dash-table-scroll" role="region" aria-label="Collaborations table" tabindex="0"><table class="dash-table"><caption class="sr-only">Your brand collaborations, status, next date and value</caption><thead><tr><th scope="col">Brand / campaign</th><th scope="col">Status</th><th scope="col">Next date</th><th scope="col">Value</th></tr></thead><tbody>
+                <tr data-state="active"><td><span class="brand-tile loop-tile">L</span><div>Loop<small>Make it your everyday</small></div></td><td><span class="badge blue-badge">In review</span></td><td>Oct 20</td><td>₹60,000</td></tr>
+                <tr data-state="active"><td><span class="brand-tile onda-tile">o.</span><div>Onda<small>A slower kind of Sunday</small></div></td><td><span class="badge purple-status">New brief</span></td><td>Oct 22</td><td>₹32,000</td></tr>
+                <tr data-state="active"><td><span class="brand-tile nomad-tile">N</span><div>Nomad<small>Out of office</small></div></td><td><span class="badge amber-status">Creating</span></td><td>Oct 24</td><td>₹28,000</td></tr>
+                <tr data-state="complete"><td><span class="brand-tile forme-tile">f.</span><div>Forme<small>Everyday essentials</small></div></td><td><span class="badge green-badge">Completed</span></td><td>Oct 18</td><td>₹45,000</td></tr>
+              </tbody></table><p class="dash-empty" hidden>No collaborations match your search.</p></div><div class="dash-table-bottom"><span class="result-count" aria-live="polite">4 collaborations</span><span>Every detail, accounted for.</span></div>
+              <div class="dashboard-activity"><span class="activity-check">✓</span><div><b>A good day to get paid.</b><p>Forme sent your final payment of ₹22,500.</p></div><span>Today</span></div>
+            </div><div class="dashboard-right"><div class="next-card" id="creator-next"><div class="dash-card-title"><h4>Next up</h4><span>2 tasks</span></div><a href="#workflow-review"><span class="task-icon">▧</span><div><b>Final touches for Loop</b><small>Reel 02 · Due Oct 20</small></div><span>↗</span></a><a href="#workflow-brief"><span class="task-icon lavender">◇</span><div><b>A new brief from Onda</b><small>Review by Oct 22</small></div><span>↗</span></a></div>
+              <div class="earnings-card" id="creator-earnings"><div class="dash-card-title"><h4>Making progress</h4><span>This month</span></div><strong>₹75,000 <span>received</span></strong><div class="earnings-chart" role="img" aria-label="Illustrative monthly earnings chart, with 75000 rupees received in October"><i style="--bar:30%"></i><i style="--bar:46%"></i><i style="--bar:38%"></i><i style="--bar:68%"></i><i style="--bar:59%"></i><i style="--bar:100%"></i></div><div class="chart-labels"><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div></div>
+            </div></div><div class="dashboard-status"><span>● All caught up. Everything is in sync.</span><span>Made for your next chapter.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="guapd-footer" aria-label="Footer">
+    <div class="footer-top"><div class="footer-about"><a href="#main" class="footer-small-logo">guapd<span>.</span></a><p>Match, deal and grow, all in one calm, trusted place. No chasing, no awkward DMs.</p><div class="footer-socials"><a role="link" aria-disabled="true" aria-label="Instagram">◎</a><a role="link" aria-disabled="true" aria-label="X">𝕏</a><a role="link" aria-disabled="true" aria-label="YouTube">▷</a><a role="link" aria-disabled="true" aria-label="LinkedIn">in</a></div></div>
+      <nav aria-label="Product"><h3>Product</h3><a role="link" aria-disabled="true">For creators</a><a role="link" aria-disabled="true">For brands</a></nav><nav aria-label="Company"><h3>Company</h3><a role="link" aria-disabled="true">Careers</a><a role="link" aria-disabled="true">Contact</a></nav><nav aria-label="Legal"><h3>Legal</h3><a role="link" aria-disabled="true">Terms of service</a><a role="link" aria-disabled="true">Privacy policy</a><button type="button" data-consent-open>Cookie preferences</button></nav>
+    </div><div class="footer-fineprint"><span>© 2026 Guapd. All rights reserved.</span><span class="footer-origin"><span>Made in India</span><i aria-hidden="true">Made with a little more care. ↗</i></span></div>
+    <div class="footer-wordmark" role="img" aria-label="guapd"><span aria-hidden="true">g</span><span aria-hidden="true">u</span><span aria-hidden="true">a</span><span aria-hidden="true">p</span><span aria-hidden="true">d</span></div>
+  </footer>
   <dialog class="info-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-copy">
     <button class="dialog-close" aria-label="Close dialog">×</button><h2 id="dialog-title"></h2><p id="dialog-copy"></p><button class="button dialog-done">Got it</button>
   </dialog>
