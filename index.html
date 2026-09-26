@@ -10,8 +10,7 @@
   <link rel="preload" href="/assets/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/archivo-600-latin.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/src/styles.css" />
-  <script defer src="/vendor/gsap.min.js"></script>
-  <script defer src="/vendor/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="/src/workflow.css" />
   <script type="module" src="/src/main.js"></script>
 </head>
 <body>
@@ -45,8 +44,57 @@
       </div>
     </section>
     <section class="together" id="together" aria-labelledby="together-heading">
-      <div class="together-content"><h2 id="together-heading">guapd brings it all together.</h2><p>One shared space for brands and creators to agree on offers, review deliverables, and manage payments.</p></div>
+      <div class="together-content"><h2 id="together-heading">guapd brings it all together.</h2><p>No more chasing across DMs, email and spreadsheets. Every offer, file and payment is tracked, so both sides always know what comes next.</p></div>
     </section>
+    <section class="workflow" id="workflow" aria-label="How guapd works">
+      <aside class="workflow-sidebar"><nav aria-label="Collaboration steps">
+        <a href="#workflow-brief" aria-current="location">Send a structured brief</a>
+        <a href="#workflow-terms">Lock the terms in writing</a>
+        <a href="#workflow-review">Upload, review and approve</a>
+        <a href="#workflow-payments">Watch the money move</a>
+      </nav></aside>
+      <div class="workflow-content">
+        <article class="workflow-step" id="workflow-brief" aria-labelledby="brief-description">
+          <div class="workflow-copy"><h3 id="brief-description"><strong>Deliverables, rate, timeline and payment split,</strong> written down and agreed before any work starts.</h3></div>
+          <div class="product-stage" role="img" aria-label="Campaign brief workspace showing creator deliverables and a structured brief for the Everyday essentials campaign">
+            <div class="product-window">
+              <div class="product-title"><span class="app-icon">▤</span><b>Summer collaborations</b><span class="tiny-info">i</span><div class="window-tools"><span class="avatar blue">A</span><span class="avatar peach">M</span><span class="avatar light">+1</span><span>Share</span><span>⋯</span></div></div>
+              <div class="product-toolbar"><span class="tool-pill"><i class="green-grid"></i>All collaborations <span>⌄</span></span><span class="tool-pill">⊞ View settings</span><span class="toolbar-search">⌕ Search</span></div>
+              <div class="product-table"><div class="table-row table-head"><span>□ &nbsp; Creator</span><span>◈ Deliverables</span><span>◷ Due date</span><span>◉ Status</span></div>
+                <div class="table-row"><span>□ <i class="avatar peach">M</i> Maya Chen</span><span>2 Reels + 3 Stories</span><span>Oct 14</span><span class="badge blue-badge">Brief sent</span></div>
+                <div class="table-row"><span>□ <i class="avatar purple">J</i> Jules Martin</span><span>1 Reel + 2 Stories</span><span>Oct 16</span><span class="badge green-badge">Agreed</span></div>
+                <div class="table-row"><span>□ <i class="avatar green">S</i> Sam Rivera</span><span>3 Reels</span><span>Oct 18</span><span class="badge gray-badge">Draft</span></div>
+                <div class="table-row"><span>□ <i class="avatar blue">A</i> Alex Morgan</span><span>1 YouTube video</span><span>Oct 20</span><span class="badge blue-badge">Brief sent</span></div>
+                <div class="table-row"><span>□ <i class="avatar yellow">N</i> Noor Patel</span><span>2 Reels + 1 Story</span><span>Oct 22</span><span class="badge green-badge">Agreed</span></div>
+              </div><div class="window-bottom">＋ Add collaboration <span aria-hidden="true">5 collaborations</span></div>
+            </div>
+            <div class="floating-sheet brief-sheet"><div class="sheet-eyebrow">Campaign brief <span>↗ &nbsp; ⋯</span></div><h4>Everyday essentials</h4><p class="sheet-subtitle">A little less routine. A little more you.</p><div class="sheet-person"><span class="avatar peach">M</span><span>Maya Chen <small>Creator</small></span><span class="badge blue-badge">Awaiting approval</span></div><div class="field-list"><div><span>▧ &nbsp; Deliverables</span><b>2 Reels, 3 Stories</b></div><div><span>◷ &nbsp; First draft</span><b>October 14, 2026</b></div><div><span>＄ &nbsp; Campaign rate</span><b>₹45,000</b></div><div><span>◴ &nbsp; Payment split</span><b>50% upfront · 50% final</b></div><div><span>↻ &nbsp; Revisions</span><b>2 rounds included</b></div></div><div class="sheet-note"><i class="check-dot">✓</i> Everything agreed before the first take.</div><div class="sheet-footer"><span>Saved just now</span><span class="mock-button">Send brief <span>↗</span></span></div></div>
+          </div>
+        </article>
+        <article class="workflow-step" id="workflow-terms" aria-labelledby="terms-description">
+          <div class="workflow-copy"><h3 id="terms-description"><strong>Every offer and counter is noted.</strong> The final number becomes the contract both sides sign</h3></div>
+          <div class="product-stage" role="img" aria-label="Offer history showing a 45000 rupee agreement and a contract signed by the brand and creator">
+            <div class="product-window"><div class="product-title"><span class="app-icon purple-icon">◇</span><b>Everyday essentials</b><span class="tiny-info">i</span><div class="window-tools"><span class="avatar blue">A</span><span class="avatar peach">M</span><span>Shared workspace</span><span>⋯</span></div></div><div class="workspace-tabs"><span>Overview</span><span class="selected">Offers & contract</span><span>Deliverables</span><span>Payments</span></div><div class="negotiation"><div class="panel-label">OFFER HISTORY <span>All changes recorded</span></div><div class="offer-item"><i class="avatar blue">A</i><div><b>Ava from Forme <small>Oct 2 · 10:24 AM</small></b><p>Sent the first offer</p><div class="offer-price">₹40,000 <span>2 Reels · 3 Stories · 2 revisions</span></div></div></div><div class="offer-item"><i class="avatar peach">M</i><div><b>Maya Chen <small>Oct 2 · 11:08 AM</small></b><p>Suggested a new rate</p><div class="offer-price">₹45,000 <span>Includes 30-day usage rights</span></div></div></div><div class="offer-item"><i class="avatar blue">A</i><div><b>Ava from Forme <small>Oct 2 · 11:32 AM</small></b><p class="accepted-copy">✓ Accepted the offer · ₹45,000</p></div></div></div></div>
+            <div class="floating-sheet contract-sheet"><div class="sheet-eyebrow">Collaboration agreement <span>↓ &nbsp; ⋯</span></div><h4>Made official.</h4><p class="sheet-subtitle">Forme × Maya Chen</p><div class="contract-total"><span>Agreed campaign value</span><b>₹45,000</b></div><div class="contract-lines"><span>01 &nbsp; Scope of work</span><p>2 Instagram Reels and 3 Stories. Two rounds of revisions. Final delivery by October 18.</p><span>02 &nbsp; Payment terms</span><p>50% on signing. 50% on final approval.</p></div><div class="signatures"><div><span class="signature">Ava Williams</span><small>Forme · Signed Oct 2</small></div><div><span class="signature">Maya Chen</span><small>Creator · Signed Oct 2</small></div></div><div class="signed-banner"><i class="check-dot">✓</i> Signed by both sides <span>View contract ↗</span></div></div>
+          </div>
+        </article>
+        <article class="workflow-step" id="workflow-review" aria-labelledby="review-description">
+          <div class="workflow-copy"><h3 id="review-description"><strong>Revisions are counted against what was agreed,</strong> so scope stays where you left it</h3></div>
+          <div class="product-stage" role="img" aria-label="Deliverable review workspace with a video preview, version history, timestamped feedback, and one of two revision rounds used">
+            <div class="product-window"><div class="product-title"><span class="app-icon">▧</span><b>Deliverables</b><span class="tiny-info">i</span><div class="window-tools"><span class="avatar blue">A</span><span class="avatar peach">M</span><span>Share</span><span>⋯</span></div></div><div class="workspace-tabs"><span class="selected">All files <em>5</em></span><span>In review <em>2</em></span><span>Approved <em>3</em></span></div><div class="asset-grid"><div class="asset-card"><div class="asset-art art-one"><span>FORME</span><div class="bottle"></div><b>Every day.<br>A little better.</b><i class="play-icon">▶</i></div><div class="asset-caption"><b>Morning routine — Reel 01</b><small>Version 2 <span class="badge blue-badge">In review</span></small></div></div><div class="asset-card"><div class="asset-art art-two"><span>FORME</span><div class="bottle"></div><b>Less, but<br>better.</b><i class="play-icon">▶</i></div><div class="asset-caption"><b>Everyday essentials — Reel 02</b><small>Version 1 <span class="badge green-badge">Approved</span></small></div></div></div><div class="upload-bar"><span>↑ &nbsp; All files synced</span><span>Last upload 2 minutes ago</span></div></div>
+            <div class="floating-sheet review-sheet"><div class="sheet-eyebrow">Review <span>↗ &nbsp; ⋯</span></div><h4>Morning routine — Reel 01</h4><div class="revision-meter"><span>Revision rounds <b>1 of 2 used</b></span><div><i></i><i></i></div></div><div class="review-comment"><span class="avatar blue">A</span><div><b>Ava Williams <small>12 minutes ago</small></b><p><span class="timecode">00:08</span> Love this opening. Could we hold the product shot a little longer?</p></div></div><div class="review-comment"><span class="avatar peach">M</span><div><b>Maya Chen <small>2 minutes ago</small></b><p>Updated in v2 — the product shot now has a little more breathing room.</p><span class="file-chip">▧ &nbsp; morning-routine-v2.mp4 <span>↗</span></span></div></div><div class="resolved-note">✓ Feedback addressed in version 2</div><div class="sheet-footer"><span class="mock-button subtle-button">Request revision</span><span class="mock-button">Approve file ✓</span></div></div>
+          </div>
+        </article>
+        <article class="workflow-step" id="workflow-payments" aria-labelledby="payments-description">
+          <div class="workflow-copy"><h3 id="payments-description"><strong>Live status from agreed to paid,</strong> visible to both sides.</h3></div>
+          <div class="product-stage" role="img" aria-label="Payment dashboard with 45000 rupees total, two paid milestones, and a shared payment timeline">
+            <div class="product-window"><div class="product-title"><span class="app-icon green-icon">↗</span><b>Payments</b><span class="tiny-info">i</span><div class="window-tools"><span class="avatar blue">A</span><span class="avatar peach">M</span><span>Shared with Maya</span><span>⋯</span></div></div><div class="money-summary"><div><small>Total agreed</small><b>₹45,000</b></div><div><small>Paid to creator</small><b>₹45,000<span class="paid-dot">●</span></b></div><div><small>Remaining</small><b>₹0</b></div></div><div class="product-toolbar"><span class="tool-pill">◴ All transactions ⌄</span><span class="tool-pill">⊞ View settings</span></div><div class="product-table"><div class="table-row table-head"><span>Payment</span><span>Amount</span><span>Date</span><span>Status</span></div><div class="table-row"><span><i class="milestone-icon">1</i> Signing payment</span><span>₹22,500</span><span>Oct 2</span><span class="badge green-badge">✓ Paid</span></div><div class="table-row"><span><i class="milestone-icon">2</i> Final approval</span><span>₹22,500</span><span>Oct 18</span><span class="badge green-badge">✓ Paid</span></div></div><div class="window-bottom"><span>Updated just now</span></div></div>
+            <div class="floating-sheet payment-sheet"><div class="sheet-eyebrow">Payment activity <span>↗ &nbsp; ⋯</span></div><div class="payment-success">✓</div><h4>All settled.</h4><p class="sheet-subtitle">The work is done. So is the payment.</p><div class="payment-total">₹45,000</div><div class="payment-timeline"><div><i>✓</i><span><b>Terms agreed</b><small>October 2 · 11:32 AM</small></span></div><div><i>✓</i><span><b>Upfront payment received</b><small>₹22,500 · October 2</small></span></div><div><i>✓</i><span><b>Final deliverables approved</b><small>October 18 · 2:14 PM</small></span></div><div><i>✓</i><span><b>Final payment received</b><small>₹22,500 · October 18</small></span></div></div><div class="sheet-footer"><span>Visible to Forme & Maya</span><span class="receipt-link">Receipt ↓</span></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
   </main>
   <dialog class="info-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-copy">
     <button class="dialog-close" aria-label="Close dialog">×</button><h2 id="dialog-title"></h2><p id="dialog-copy"></p><button class="button dialog-done">Got it</button>
