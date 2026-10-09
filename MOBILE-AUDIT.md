@@ -24,3 +24,8 @@
 Browser viewport checks, not physical iOS/Android device certification or an exhaustive WCAG audit. Demo actions use local sample state; payment, signing, upload and account backends are not part of this landing page.
 
 Local visual evidence: output/mobile-audit/receipt-320.png and output/mobile-audit/dashboard-390.png (ignored generated files).
+
+## Follow-up — 10 October 2026
+A phone screenshot exposed a visual defect missed by the earlier width checks: the oversized background workspace remained visible behind the detail sheet. Mobile previews now display one complete surface at a time. Controls participate in normal layout instead of absolute positioning, with a consistent 16px gap above either surface. Removed the desktop fade, drag marker and redundant reset control on phones.
+
+Rechecked all four chapters in both modes at 320, 360, 390 and 430px: no page overflow, each active workspace fits its container, no overlap with the controls, and detail sheets hide in workspace mode. Browser error log empty. Desktop styles remain outside this mobile-only override.

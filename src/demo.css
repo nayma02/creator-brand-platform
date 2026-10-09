@@ -67,3 +67,18 @@
  .workflow-step:not(:first-child) .demo-stage-caption>span:first-child{display:none}
 }
 @media(max-width:767px){.floating-sheet{scroll-margin-top:76px}.demo-tab-panel{padding:16px;min-height:340px}.demo-summary-grid{grid-template-columns:1fr}.demo-workspace-focus .upload-bar{font-size:12px}.review-comment p,.contract-lines p{font-size:12px}.contract-lines p{line-height:1.6}.signatures{gap:10px}.signature{font-size:17px}}
+
+/* On phones each demo is one complete surface, not a cropped desktop stack. */
+@media(max-width:767px){
+ .product-stage,.product-stage.demo-workspace-focus{display:flex;flex-direction:column;gap:16px;height:auto;min-height:0;padding:16px 12px 24px}
+ .product-stage::after{display:none}
+ .demo-stage-caption{position:relative;inset:auto;display:flex;flex-wrap:wrap;gap:8px;width:100%;pointer-events:auto}
+ .demo-stage-caption>span{flex-basis:100%;line-height:1.5}
+ .demo-stage-caption button{min-height:44px;margin:0}
+ .demo-stage-caption button:last-child{margin-left:auto}
+ .product-stage:not(.demo-workspace-focus) .product-window{display:none}
+ .product-stage .floating-sheet{position:relative;inset:auto;width:100%;margin:0}
+ .product-stage.demo-workspace-focus .product-window{position:relative;inset:auto;width:100%;transform:none;margin:0}
+ .sheet-eyebrow>span[aria-hidden]{display:none}
+}
+@media(max-width:767px){.demo-stage-caption button:last-child{display:none}}
