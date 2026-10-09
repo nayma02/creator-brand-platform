@@ -82,3 +82,14 @@
  .sheet-eyebrow>span[aria-hidden]{display:none}
 }
 @media(max-width:767px){.demo-stage-caption button:last-child{display:none}}
+
+/* Keep the entire chart hit area clear; only the value bar receives color. */
+@media(max-width:767px){
+ .earnings-chart button,.earnings-chart button:hover,.earnings-chart button[aria-pressed=true]{background:transparent}
+ .earnings-chart button:hover::before{background:#a9bbd8}
+ .earnings-chart button[aria-pressed=true]::before{background:#819dc5}
+ .product-stage,.product-stage.demo-workspace-focus{padding-bottom:64px}
+ .product-stage .demo-drag-handle{cursor:grab;touch-action:none;user-select:none;min-height:44px}
+ .product-stage .sheet-eyebrow>span[aria-hidden]{display:inline}
+ .demo-stage-caption button:last-child{display:block}
+}
