@@ -8,3 +8,62 @@
 
 /* The drag hint is said once, on the first chapter; later chapters keep only the controls. */
 .workflow-step:not(:first-child) .demo-stage-caption>span:first-child{visibility:hidden}
+
+/* Phone previews remain real controls: readable fields and touch-sized actions. */
+.demo-empty{padding:20px;font-size:13px;color:#606977;line-height:1.5}
+@media(max-width:767px){
+ .product-stage{min-height:0;padding:136px 12px 24px}
+ .demo-stage-caption{left:12px;right:12px;gap:4px;z-index:5;font-size:11px}
+ .demo-stage-caption button{min-height:40px;font-size:12px;padding:8px}
+ .demo-drag-handle{cursor:default;touch-action:pan-y;user-select:auto}
+ .product-window[inert]{pointer-events:none}
+ .floating-sheet{padding:16px;max-width:100%;font-size:13px}
+ .floating-sheet h4{font-size:20px;line-height:1.3}
+ .sheet-eyebrow,.sheet-subtitle{font-size:12px}
+ .field-list>div{display:grid;gap:4px;padding:10px}
+ .field-list span{font-size:11px}
+ .demo-field{width:100%;font-size:16px;min-height:36px;text-align:left;padding:5px;margin:0}
+ .sheet-person{flex-wrap:wrap}.sheet-person>.badge{margin-left:0}
+ .mock-button,.subtle-button,.receipt-link,.signed-banner button,.demo-replay{min-height:44px;font-size:12px}
+ .sheet-footer{flex-wrap:wrap}.review-sheet .sheet-footer{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ .mock-button{gap:6px;padding:9px 10px}
+ .demo-comment-form input,.demo-form input,.demo-search,.dash-search input{font-size:16px;min-height:44px}
+ .demo-comment-form button{min-width:44px;min-height:44px}
+ .demo-workspace-focus{padding:70px 12px 24px}
+ .demo-workspace-focus .product-window{min-height:0;border-radius:12px}
+ .demo-workspace-focus .product-title{height:auto;min-height:54px;flex-wrap:wrap;padding:10px;gap:6px}
+ .demo-workspace-focus .window-tools{margin:0 0 0 auto;padding:0;gap:4px}
+ .demo-workspace-focus .window-tools button{min-height:36px;min-width:32px;font-size:12px}
+ .demo-workspace-focus .tiny-info{min-width:24px;min-height:24px}
+ .demo-workspace-focus .product-title b{white-space:normal}
+ .demo-workspace-focus .product-toolbar{padding:10px;gap:8px}
+ .demo-workspace-focus .tool-pill{min-height:44px;font-size:12px;white-space:normal}
+ .demo-search{width:100%;margin:0}
+ .demo-workspace-focus .workspace-tabs{padding-inline:12px;gap:18px;height:50px}
+ .demo-workspace-focus .workspace-tabs>button{min-height:44px}
+ .demo-workspace-focus .product-table{min-height:0}
+ .demo-workspace-focus .table-row{min-width:680px;grid-template-columns:180px 195px 135px 170px}
+ .demo-row-name{min-height:44px}
+ .demo-workspace-focus .negotiation{height:auto;max-height:410px;padding:16px}
+ .offer-item>div{min-width:0}.demo-workspace-focus .offer-price{width:100%;overflow-wrap:anywhere}
+ .offer-item small{display:block;margin:4px 0 0}
+ .demo-workspace-focus .asset-grid{display:grid;grid-template-columns:minmax(0,1fr);padding:12px;min-height:0}
+ .demo-workspace-focus .asset-card{width:100%}
+ .asset-caption>button{min-height:44px;font-size:13px}
+ .asset-art .play-icon{width:44px;height:44px;left:calc(50% - 22px)}
+ .upload-bar{gap:12px;flex-wrap:wrap;min-height:44px}
+ .demo-workspace-focus .money-summary{display:grid;grid-template-columns:1fr;gap:14px;padding:16px}
+ .demo-workspace-focus .money-summary b{font-size:25px;margin-top:4px}
+ .demo-dialog{padding:24px 20px;overscroll-behavior:contain}
+ .demo-close{min-width:44px;min-height:44px;top:4px;right:4px}
+ .demo-person{gap:12px;flex-wrap:wrap}.demo-actions{flex-wrap:wrap}
+ .demo-actions button,.demo-dialog .tool-pill{min-height:44px}
+ .dash-filters button{min-height:44px;padding:8px}.dash-table-tools{gap:8px}
+ .creator-rail>a:not(.dashboard-brand){min-height:44px}
+ .earnings-chart button{position:relative;min-height:44px;background:transparent}
+ .earnings-chart button::before{content:'';position:absolute;inset:auto 0 0;height:var(--bar);background:#e4ebf6;border-radius:3px 3px 0 0}
+ .earnings-chart button[aria-pressed=true]::before{background:#819dc5}
+ .earnings-chart button{height:100%}
+ .workflow-step:not(:first-child) .demo-stage-caption>span:first-child{display:none}
+}
+@media(max-width:767px){.floating-sheet{scroll-margin-top:76px}.demo-tab-panel{padding:16px;min-height:340px}.demo-summary-grid{grid-template-columns:1fr}.demo-workspace-focus .upload-bar{font-size:12px}.review-comment p,.contract-lines p{font-size:12px}.contract-lines p{line-height:1.6}.signatures{gap:10px}.signature{font-size:17px}}
