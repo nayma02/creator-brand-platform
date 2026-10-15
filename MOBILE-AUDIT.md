@@ -29,3 +29,10 @@ Local visual evidence: output/mobile-audit/receipt-320.png and output/mobile-aud
 A phone screenshot exposed a visual defect missed by the earlier width checks: the oversized background workspace remained visible behind the detail sheet. Mobile previews now display one complete surface at a time. Controls participate in normal layout instead of absolute positioning, with a consistent 16px gap above either surface. Removed the desktop fade, drag marker and redundant reset control on phones.
 
 Rechecked all four chapters in both modes at 320, 360, 390 and 430px: no page overflow, each active workspace fits its container, no overlap with the controls, and detail sheets hide in workspace mode. Browser error log empty. Desktop styles remain outside this mobile-only override.
+
+## Retest — 15 October 2026
+- All four workspace/detail toggles checked at 320, 360, 390 and 430px: no document overflow; active windows stay within viewport.
+- Retested brief edit/send, unpaid receipt, dashboard search/filter empty state, May/October chart selection, review approval/undo, revision allowance and per-file comments. No browser error logs during these checks.
+- Fixed height-only viewport resizing resetting dragged panels (for example, changing browser chrome or keyboard height). Width changes still reset positions safely. Verified a 16px panel offset persists through a height change and reset still works.
+- Fixed saved feedback overwriting the approval/revision status. Feedback now has a separate wrapping, height-limited block. Verified status and comment coexist, and comments do not carry into the other file.
+- Checks used browser mobile viewport simulation; physical iOS/Android testing remains outside this pass.

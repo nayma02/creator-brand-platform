@@ -93,3 +93,5 @@
  .product-stage .sheet-eyebrow>span[aria-hidden]{display:inline}
  .demo-stage-caption button:last-child{display:block}
 }
+
+.demo-saved-feedback{font-size:12px;line-height:1.5;color:#526074;overflow-wrap:anywhere;padding:10px 0;max-height:100px;overflow:auto}
